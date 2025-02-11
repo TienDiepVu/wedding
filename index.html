@@ -8,36 +8,18 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Wedding &mdash; 100% Free Fully Responsive HTML5 Template by FREEHTML5.co</title>
+  <title>Xuân Lượng ❤ Hoà Hường &mdash; Wedding</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
-  <meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
-  <meta name="author" content="FREEHTML5.CO" />
-
-  <!-- 
-	//////////////////////////////////////////////////////
-
-	FREE HTML5 TEMPLATE 
-	DESIGNED & DEVELOPED by FREEHTML5.CO
-		
-	Website: 		http://freehtml5.co/
-	Email: 			info@freehtml5.co
-	Twitter: 		http://twitter.com/fh5co
-	Facebook: 		https://www.facebook.com/fh5co
-
-	//////////////////////////////////////////////////////
-	 -->
+  <meta name="description" content="Đám cưới Xuân Lượng ❤ Hoà Hường" />
+  <meta name="keywords" content="Lượng, Hường, đám cưới, wedding, Xuân Lượng, Hoà Hường" />
+  <meta name="author" content="vuxuanluong1998" />
 
   <!-- Facebook and Twitter integration -->
-  <meta property="og:title" content="" />
-  <meta property="og:image" content="" />
-  <meta property="og:url" content="" />
-  <meta property="og:site_name" content="" />
-  <meta property="og:description" content="" />
-  <meta name="twitter:title" content="" />
-  <meta name="twitter:image" content="" />
-  <meta name="twitter:url" content="" />
-  <meta name="twitter:card" content="" />
+  <meta property="og:title" content="Xuân Lượng ❤ Hoà Hường" />
+  <meta property="og:image" content="images/couple-1.jpg" />
+  <meta property="og:url" content="http://xuanluong-hoahuong-wedding.site/" />
+  <meta property="og:site_name" content="xuanluong-hoahuong-wedding.site" />
+  <meta property="og:description" content="Xuân Lượng ❤ Hoà Hường" />
 
   <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet'
     type='text/css'>
@@ -78,31 +60,15 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-2">
-            <div id="fh5co-logo"><a href="index.html">Wedding<strong>.</strong></a></div>
+            <div id="fh5co-logo"><a href="#page">Wedding<strong>.</strong></a></div>
           </div>
           <div class="col-xs-10 text-right menu-1">
             <ul>
-              <li class="active"><a href="index.html">Home</a></li>
-              <li><a href="about.html">Story</a></li>
-              <li class="has-dropdown">
-                <a href="services.html">Services</a>
-                <ul class="dropdown">
-                  <li><a href="#">Web Design</a></li>
-                  <li><a href="#">eCommerce</a></li>
-                  <li><a href="#">Branding</a></li>
-                  <li><a href="#">API</a></li>
-                </ul>
-              </li>
-              <li class="has-dropdown">
-                <a href="gallery.html">Gallery</a>
-                <ul class="dropdown">
-                  <li><a href="#">HTML5</a></li>
-                  <li><a href="#">CSS3</a></li>
-                  <li><a href="#">Sass</a></li>
-                  <li><a href="#">jQuery</a></li>
-                </ul>
-              </li>
-              <li><a href="contact.html">Contact</a></li>
+              <li class="active"><a href="#page">Home</a></li>
+              <li><a href="#fh5co-couple">Story</a></li>
+              <li><a href="#fh5co-event">Services</a></li>
+              <li><a href="#fh5co-couple-story">Gallery</a></li>
+              <li><a href="#fh5co-started">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -118,7 +84,7 @@
           <div class="col-md-8 col-md-offset-2 text-center">
             <div class="display-t">
               <div class="display-tc animate-box" data-animate-effect="fadeIn">
-                <h1>Joefrey &amp; Sheila</h1>
+                <h1>Lượng &amp; Hường</h1>
                 <h2>We Are Getting Married</h2>
                 <div class="simply-countdown simply-countdown-one"></div>
                 <p><a href="#" class="btn btn-default btn-sm">Save the date</a></p>
@@ -652,20 +618,15 @@
   <script src="js/main.js"></script>
 
   <script>
-    var d = new Date("2025/03/15");
+    var targetDate = new Date(2025, 2, 16, 0, 0, 0);
 
-    // default example
     simplyCountdown('.simply-countdown-one', {
-      year: d.getFullYear(),
-      month: d.getMonth() + 1,
-      day: d.getDate()
-    });
-
-    //jQuery example
-    $('#simply-countdown-losange').simplyCountdown({
-      year: d.getFullYear(),
-      month: d.getMonth() + 1,
-      day: d.getDate(),
+      year: targetDate.getFullYear(),
+      month: targetDate.getMonth() + 1,
+      day: targetDate.getDate(),
+      hours: targetDate.getHours(),
+      minutes: targetDate.getMinutes(),
+      seconds: targetDate.getSeconds(),
       enableUtc: false
     });
   </script>
