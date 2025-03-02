@@ -1013,6 +1013,11 @@ form label {
   padding: 7em 0;
   clear: both;
 }
+
+#fh5co-footer {
+  padding: 2em 0;
+}
+
 @media screen and (max-width: 768px) {
   #fh5co-testimonial,
   #fh5co-services,
