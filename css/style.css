@@ -999,7 +999,7 @@ form label {
   position: relative;
   animation: pulse 1s ease infinite;
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 500px) {
   .simply-countdown > .simply-section {
     width: 78px;
     height: 78px;
@@ -1044,7 +1044,7 @@ form label {
   /* words */
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 500px) {
   .simply-countdown > .simply-section .simply-amount {
     line-height: 1.1;
   }
