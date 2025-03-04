@@ -1005,6 +1005,12 @@ form label {
     height: 78px;
   }
 }
+@media screen and (max-width: 375px) {
+  .simply-countdown > .simply-section {
+    width: 64px;
+    height: 64px;
+  }
+}
 
 @keyframes pulse {
   0% {
@@ -1023,6 +1029,11 @@ form label {
   vertical-align: middle;
   height: 100px;
   width: 100px;
+}
+@media screen and (max-width: 375px) {
+  .simply-countdown > .simply-section > div {
+    height: 64px;
+  }
 }
 
 .simply-countdown > .simply-section .simply-amount,
