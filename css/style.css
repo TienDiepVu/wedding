@@ -330,11 +330,11 @@ figure {
 
 .fh5co-cover {
   height: 900px;
-  background-size: 120%;
+  background-size: 100%;
   background-repeat: no-repeat;
   position: relative;
   width: 100%;
-  background-position: 0px 0px;
+  background-position: 0px 20%;
 }
 .fh5co-cover .overlay {
   z-index: 0;
@@ -352,7 +352,6 @@ figure {
 @media screen and (max-width: 768px) {
   .fh5co-cover {
     height: 600px;
-    background-size: 100%;
   }
 }
 .fh5co-cover .display-t,
