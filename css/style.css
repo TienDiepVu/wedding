@@ -254,7 +254,7 @@ figure {
 #fh5co-event,
 .fh5co-bg {
   background-size: cover;
-  background-position: 0 10%;
+  background-position: 0 30%;
   background-repeat: no-repeat;
   position: relative;
 }
@@ -267,7 +267,10 @@ figure {
 }
 @media screen and (max-width: 768px) {
   #fh5co-started.fh5co-bg {
-    background-position: 55% 0;
+    /* background-position: 55% 0; */
+    background-size: contain;
+    background-position: top;
+    background-repeat: repeat-y;
   }
 }
 
@@ -389,7 +392,7 @@ figure {
 
 #fh5co-counter,
 #fh5co-event {
-  height: 850px;
+  height: 950px;
   float: left;
 }
 #fh5co-counter .display-t,
@@ -433,7 +436,7 @@ figure {
   #fh5co-event {
     height: inherit;
     padding: 7em 0;
-    background-position: 35%;
+    background-position: 70% 30%;
   }
   #fh5co-counter .display-t,
   #fh5co-counter .display-tc,
