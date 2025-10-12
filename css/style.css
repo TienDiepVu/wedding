@@ -396,7 +396,7 @@ figure {
 
 #fh5co-counter,
 #fh5co-event {
-  height: 950px;
+  height: 1000px;
   float: left;
 }
 #fh5co-counter .display-t,
@@ -683,21 +683,6 @@ figure {
   }
 }
 
-#fh5co-gallery iframe {
-  width: 100%;
-  height: 500px;
-}
-@media (max-width: 480px) {
-  #fh5co-gallery iframe {
-    height: 250px;
-  }
-}
-@media (max-width: 768px) {
-  #fh5co-gallery iframe {
-    height: 350px;
-  }
-}
-
 #fh5co-gallery-list {
   flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
@@ -711,7 +696,6 @@ figure {
   float: left;
   padding: 0;
   margin: 0;
-  margin-bottom: 5em;
   width: 100%;
 }
 #fh5co-gallery-list li {
@@ -731,6 +715,7 @@ figure {
   -ms-border-radius: 7px;
   border-radius: 7px;
 }
+
 @media screen and (max-width: 480px) {
   #fh5co-gallery-list li {
     margin-left: 0;
@@ -777,6 +762,10 @@ figure {
     left: 1em;
     right: 1em;
   }
+
+  /* #fh5co-gallery-list .hidden-on-mobile {
+    display: none;
+  } */
 }
 #fh5co-gallery-list li a .case-studies-summary span {
   text-transform: uppercase;
@@ -1119,6 +1108,13 @@ form label {
   .fh5co-section {
     padding: 3em 0;
   }
+
+  #fh5co-couple,
+  #fh5co-event,
+  #fh5co-gallery,
+  .fh5co-heading {
+    margin-bottom: 1em !important;
+  }
 }
 
 .fh5co-section-gray {
@@ -1283,9 +1279,6 @@ form label {
   color: #5d5d5d;
 }
 
-.fh5co-heading {
-  margin-bottom: 5em;
-}
 .fh5co-heading.fh5co-heading-sm {
   margin-bottom: 2em;
 }
@@ -1504,6 +1497,7 @@ form label {
   }
 
   #fh5co-started .row img {
+    height: 200px;
     margin-bottom: 12px;
   }
 }
