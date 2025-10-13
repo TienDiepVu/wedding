@@ -254,7 +254,7 @@ figure {
 #fh5co-event,
 .fh5co-bg {
   background-size: cover;
-  background-position: 0 30%;
+  background-position: 10% 40%;
   background-repeat: no-repeat;
   position: relative;
 }
@@ -269,7 +269,7 @@ figure {
 #fh5co-started.fh5co-bg {
   background-position: 55% 20%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   #fh5co-started.fh5co-bg {
     /* background-position: 55% 0; */
     background-size: contain;
@@ -440,7 +440,22 @@ figure {
   #fh5co-event {
     height: inherit;
     padding: 7em 0;
-    background-position: 70% 30%;
+    background-position: 50% 30%;
+  }
+  #fh5co-counter .display-t,
+  #fh5co-counter .display-tc,
+  #fh5co-event .display-t,
+  #fh5co-event .display-tc {
+    height: inherit;
+  }
+}
+@media screen and (max-width: 480px) {
+  #fh5co-event {
+    height: inherit;
+    padding: 7em 0;
+    background-position: 0 0;
+    background-size: contain;
+    background-repeat: repeat-y;
   }
   #fh5co-counter .display-t,
   #fh5co-counter .display-tc,
@@ -1088,7 +1103,7 @@ form label {
 #fh5co-couple,
 #fh5co-gallery,
 .fh5co-section {
-  padding: 7em 0;
+  padding: 3em 0;
   clear: both;
 }
 
@@ -1110,8 +1125,6 @@ form label {
   }
 
   #fh5co-couple,
-  #fh5co-event,
-  #fh5co-gallery,
   .fh5co-heading {
     margin-bottom: 1em !important;
   }
@@ -1974,6 +1987,24 @@ form label {
 
 .js .animate-box {
   opacity: 0;
+}
+
+.desc-groom-pc {
+  display: block;
+}
+
+.desc-groom-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .desc-groom-pc {
+    display: none;
+  }
+
+  .desc-groom-mobile {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
