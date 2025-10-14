@@ -535,8 +535,15 @@
       </footer>
     </div>
 
-    <div class="gototop js-top">
-      <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+    <div class="audio">
+      <audio id="wedding-music" loop>
+        <source src="/assets/i-do.mp3" type="audio/mp3" />
+        Trình duyệt của bạn không hỗ trợ phát nhạc.
+      </audio>
+
+      <button id="music-toggle" onclick="toggleMusic()" title="Bật/tắt nhạc">
+        🔇
+      </button>
     </div>
 
     <!-- jQuery -->
@@ -581,6 +588,36 @@
           seconds: "giây",
         },
         plural: false,
+      });
+    </script>
+    <script>
+      const music = document.getElementById("wedding-music");
+      const toggleBtn = document.getElementById("music-toggle");
+      let isPlaying = false;
+
+      function toggleMusic() {
+        if (isPlaying) {
+          music.pause();
+          toggleBtn.textContent = "🔇";
+        } else {
+          music.play();
+          toggleBtn.textContent = "🔊";
+        }
+        isPlaying = !isPlaying;
+      }
+
+      // Autoplay sau tương tác đầu tiên
+      document.addEventListener("click", function initMusic() {
+        music
+          .play()
+          .then(() => {
+            isPlaying = true;
+            toggleBtn.textContent = "🔊";
+          })
+          .catch(() => {
+            // Không làm gì nếu bị chặn autoplay
+          });
+        document.removeEventListener("click", initMusic);
       });
     </script>
   </body>
